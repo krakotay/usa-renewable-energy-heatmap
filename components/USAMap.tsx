@@ -4,11 +4,24 @@ import React, { useMemo, useState, useRef, useCallback } from 'react';
 import type { StateData } from '../types';
 import { STATE_PATHS, STATE_LABEL_COORDS, STATE_LINES } from './usaMapData';
 
-const getColorForValue = (value: number, min: number, max: number): string => {
-  if (value <= 0) return '#4A5568'; // gray-700
-  const ratio = (max > min) ? (value - min) / (max - min) : 0;
-  const hue = Math.max(0, Math.min(120, ratio * 120));
-  return `hsl(${hue}, 80%, 50%)`;
+const getColorForValue = (value: number, min: number, max: number, scale: 'linear' | 'logarithmic'): string => {
+    if (value <= 0) return '#4A5568'; // gray-700
+    if (max <= min) return 'hsl(120, 80%, 50%)';
+
+    let ratio = 0;
+    if (scale === 'logarithmic') {
+        const logMin = Math.log(min > 0 ? min : 0.1); // Use a small epsilon for min=0
+        const logMax = Math.log(max);
+        const logValue = Math.log(value);
+        if (logMax > logMin) {
+            ratio = (logValue - logMin) / (logMax - logMin);
+        }
+    } else { // linear
+        ratio = (value - min) / (max - min);
+    }
+  
+    const hue = Math.max(0, Math.min(120, ratio * 120));
+    return `hsl(${hue}, 80%, 50%)`;
 };
 
 interface USAMapProps {
@@ -18,6 +31,7 @@ interface USAMapProps {
   mapMode: 'percentage' | 'absolute';
   onStateHover: (data: StateData | null, position: { x: number; y: number } | null) => void;
   perCapitaFilter: number;
+  colorScale: 'linear' | 'logarithmic';
 }
 
 const StatePath: React.FC<{
@@ -79,7 +93,7 @@ const StateLabel: React.FC<{
     );
 };
 
-export const USAMap: React.FC<USAMapProps> = ({ data, minVal, maxVal, mapMode, onStateHover, perCapitaFilter }) => {
+export const USAMap: React.FC<USAMapProps> = ({ data, minVal, maxVal, mapMode, onStateHover, perCapitaFilter, colorScale }) => {
   const dataMap = useMemo(() => new Map(data.map(d => [d.id, d])), [data]);
   const svgRef = useRef<SVGSVGElement>(null);
   const [transform, setTransform] = useState({ scale: 1, x: 0, y: 0 });
@@ -186,7 +200,7 @@ export const USAMap: React.FC<USAMapProps> = ({ data, minVal, maxVal, mapMode, o
                         : ((state?.wind ?? 0) + (state?.solar ?? 0));
                         
                     const fill = state 
-                        ? getColorForValue(valueToColor, minVal, maxVal)
+                        ? getColorForValue(valueToColor, minVal, maxVal, colorScale)
                         : '#4A5568';
                     
                     return (

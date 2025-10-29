@@ -12,7 +12,7 @@ export const ModeToggle: React.FC<ModeToggleProps> = ({ mapMode, setMapMode }) =
   const inactiveClasses = "bg-white text-gray-700 hover:bg-gray-100";
 
   return (
-    <div className="absolute top-4 left-4 bg-white/80 backdrop-blur-sm p-1 rounded-lg shadow-lg border border-gray-200 z-20 flex space-x-1">
+    <div className="bg-white/80 backdrop-blur-sm p-1 rounded-lg shadow-lg border border-gray-200 flex space-x-1">
       <button
         onClick={() => setMapMode('percentage')}
         className={`${baseClasses} ${mapMode === 'percentage' ? activeClasses : inactiveClasses}`}
