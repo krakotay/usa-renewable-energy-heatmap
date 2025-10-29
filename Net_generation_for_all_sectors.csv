@@ -1,0 +1,311 @@
+"Net generation for all sectors"
+"https://www.eia.gov/electricity/data/browser/#/topic/0?agg=2,0,1&fuel=g084&geo=fvvvvvvvvvvvo&sec=g&freq=A&start=2001&end=2024&ctype=linechart&ltype=pin&rtype=s&maptype=0&rse=0&pin="
+"Source: U.S. Energy Information Administration"
+"description","units","source key","2001","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021","2022","2023","2024"
+"Net generation for all sectors","thousand megawatthours",,,,,,,,,,,,,,,,,,,,,,,,,
+"United States",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"New England",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"New England : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-NEW-99.A",116591,124340,130148,133518,136149,132211,132526,127094,121666,129728,123338,120887,115436,110896,110235,107725,105234,105548,99997,96809,103089,105612,102611,109310
+"New England : other renewables",,"ELEC.GEN.AOR-NEW-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"New England : wind","thousand megawatthours","ELEC.GEN.WND-NEW-99.A",12,10,11,11,11,11,110,156,379,614,870,1294,1880,2055,2269,2646,3444,3556,3734,3769,3780,4046,3450,3604
+"New England : all solar","thousand megawatthours","ELEC.GEN.TSN-NEW-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",1175,1702,2467,3164,4204,4767,5803,6769,9138,10294,11789
+"Connecticut",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"Connecticut : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-CT-99.A",30491,31311,29545,32633,33550,34682,33171,30409,31206,33350,33745,36118,35611,33677,37471,36497,34563,39454,40050,41191,44080,43054,40666,44761
+"Connecticut : other renewables",,"ELEC.GEN.AOR-CT-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"Connecticut : wind","thousand megawatthours","ELEC.GEN.WND-CT-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--",13,13,12,12,12,13,13,10,10
+"Connecticut : all solar","thousand megawatthours","ELEC.GEN.TSN-CT-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",138,216,344,447,605,738,949,1129,1470,1659,1935
+"Maine",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"Maine : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-ME-99.A",19565,22535,18972,19099,18844,16816,16129,17095,16350,17019,15974,15048,14030,13249,11741,11514,11264,11281,10491,10002,10908,12764,12512,14655
+"Maine : other renewables",,"ELEC.GEN.AOR-ME-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"Maine : wind","thousand megawatthours","ELEC.GEN.WND-ME-99.A","--","--","--","--","--","--",99,132,299,499,707,887,1048,1097,1296,1667,2333,2384,2494,2395,2544,2716,2339,2446
+"Maine : all solar","thousand megawatthours","ELEC.GEN.TSN-ME-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",13,19,29,46,68,84,117,293,768,1152,1960
+"Massachusetts",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"Massachusetts : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-MA-99.A",38478,42028,48385,47500,47515,45598,47076,42505,38967,42805,38055,35578,32885,31119,32086,31955,32204,27173,21516,18214,19477,21026,19696,20915
+"Massachusetts : other renewables",,"ELEC.GEN.AOR-MA-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"Massachusetts : wind","thousand megawatthours","ELEC.GEN.WND-MA-99.A","--",0,"--","--","--","--","--",4,6,22,61,90,205,225,215,216,233,221,211,238,209,216,182,169
+"Massachusetts : all solar","thousand megawatthours","ELEC.GEN.TSN-MA-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",931,1314,1863,2304,3062,3280,3726,4120,5353,5724,6185
+"New Hampshire",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"New Hampshire : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-NH-99.A",15075,15953,21597,23876,24470,22064,23277,22877,20164,22196,20066,19222,19779,19538,20016,19282,17447,17087,18027,16351,17193,18764,16825,16942
+"New Hampshire : other renewables",,"ELEC.GEN.AOR-NH-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"New Hampshire : wind","thousand megawatthours","ELEC.GEN.WND-NH-99.A","--","--","--","--","--","--","--",10,62,76,66,209,389,412,423,432,412,407,433,525,504,482,411,445
+"New Hampshire : all solar","thousand megawatthours","ELEC.GEN.TSN-NH-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",14,24,52,87,108,130,161,197,244,302,365
+"Rhode Island",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"Rhode Island : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-RI-99.A",7502,7057,5621,4939,6053,5968,7050,7387,7697,7739,8722,8309,6247,6282,6939,6565,7615,8375,7624,8895,9323,7819,10431,9777
+"Rhode Island : other renewables",,"ELEC.GEN.AOR-RI-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"Rhode Island : wind","thousand megawatthours","ELEC.GEN.WND-RI-99.A","--","--","--","--","--","--","--","--","--",3,3,1,3,10,10,27,149,159,206,215,172,209,169,178
+"Rhode Island : all solar","thousand megawatthours","ELEC.GEN.TSN-RI-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",21,28,44,69,124,235,494,671,888,1027,882
+"Vermont",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"Vermont : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-VT-99.A",5481,5456,6028,5470,5717,7084,5824,6820,7282,6620,6776,6612,6885,7031,1982,1911,2141,2179,2290,2156,2108,2184,2480,2259
+"Vermont : other renewables",,"ELEC.GEN.AOR-VT-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"Vermont : wind","thousand megawatthours","ELEC.GEN.WND-VT-99.A",12,10,11,11,11,11,11,10,12,14,33,107,236,311,325,291,305,373,377,384,338,409,340,355
+"Vermont : all solar","thousand megawatthours","ELEC.GEN.TSN-VT-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",57,102,135,210,237,300,357,360,414,430,462
+"Middle Atlantic",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"Middle Atlantic : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-MAT-99.A",399912,405484,401392,408506,425528,421777,434638,426348,414458,432396,429489,424451,427653,426164,427736,427030,417261,422940,431617,420680,427537,429507,424194,430689
+"Middle Atlantic : other renewables",,"ELEC.GEN.AOR-MAT-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"Middle Atlantic : wind","thousand megawatthours","ELEC.GEN.WND-MAT-99.A",32,139,153,423,387,1032,1324,2001,3362,4463,4633,5132,6902,7556,7351,7437,7749,7588,7728,8290,7631,8161,8076,9307
+"Middle Atlantic : all solar","thousand megawatthours","ELEC.GEN.TSN-MAT-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",2622,3077,3594,4378,5176,6308,7668,8786,10994,12304,14710
+"New Jersey",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"New Jersey : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-NJ-99.A",59421,61569,57399,55882,60550,60700,62671,63675,61811,65682,64694,65263,64751,68051,74609,77611,75645,75034,71019,61106,61434,65061,64229,60175
+"New Jersey : other renewables",,"ELEC.GEN.AOR-NJ-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"New Jersey : wind","thousand megawatthours","ELEC.GEN.WND-NJ-99.A","--","--","--","--","--",16,20,21,21,13,11,12,11,23,22,21,22,23,22,20,20,22,18,19
+"New Jersey : all solar","thousand megawatthours","ELEC.GEN.TSN-NJ-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",1888,2062,2220,2586,2903,3357,3809,4043,4691,4710,4992
+"New York",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"New York : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-NY-99.A",143915,139592,137643,137965,146887,142265,145879,140322,133151,136962,137480,135768,136117,137077,138582,134377,128025,132521,131603,129430,124772,125185,124040,129015
+"New York : other renewables",,"ELEC.GEN.AOR-NY-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"New York : wind","thousand megawatthours","ELEC.GEN.WND-NY-99.A",21,82,41,116,103,655,833,1251,2266,2596,2828,2992,3539,3968,3977,3940,4136,3998,4456,4522,4156,4568,4800,6031
+"New York : all solar","thousand megawatthours","ELEC.GEN.TSN-NY-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",421,689,1013,1364,1794,2376,3130,3861,5256,6205,7650
+"Pennsylvania",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"Pennsylvania : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-PA-99.A",196577,204323,206350,214659,218091,218812,226088,222351,219496,229752,227315,223420,226786,221035,214545,215042,213591,215386,228995,230143,241331,239261,235925,241499
+"Pennsylvania : other renewables",,"ELEC.GEN.AOR-PA-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"Pennsylvania : wind","thousand megawatthours","ELEC.GEN.WND-PA-99.A",11,58,112,306,284,361,470,729,1075,1854,1794,2129,3352,3565,3353,3476,3591,3567,3250,3748,3455,3572,3258,3257
+"Pennsylvania : all solar","thousand megawatthours","ELEC.GEN.TSN-PA-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",314,325,361,427,479,575,729,882,1047,1389,2069
+"East North Central",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"East North Central : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-ENC-99.A",614690,637052,632051,647006,664912,652547,668755,660867,607787,645996,629676,613916,622073,619924,600419,586023,580757,611174,588001,554079,581539,597825,584213,614249
+"East North Central : other renewables",,"ELEC.GEN.AOR-ENC-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"East North Central : wind","thousand megawatthours","ELEC.GEN.WND-ENC-99.A",73,47,118,184,249,373,791,3219,5589,8849,11341,14612,18610,20218,22852,23019,25778,26181,30422,33301,38867,47600,43502,49877
+"East North Central : all solar","thousand megawatthours","ELEC.GEN.TSN-ENC-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",378,463,604,863,1134,1428,1965,4344,7538,10580,18230
+"Illinois",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"Illinois : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-IL-99.A",179249,188054,189055,191958,194120,192427,200261,199475,193864,201352,199500,197565,203005,202144,193952,187289,183592,188003,184470,173395,181638,185223,177738,185013
+"Illinois : other renewables",,"ELEC.GEN.AOR-IL-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"Illinois : wind","thousand megawatthours","ELEC.GEN.WND-IL-99.A","--","--",18,78,141,255,664,2337,2820,4454,6213,7727,9625,10083,10747,10663,12268,11899,14460,16226,19133,23494,21808,24910
+"Illinois : all solar","thousand megawatthours","ELEC.GEN.TSN-IL-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",71,76,86,111,161,251,506,1438,2795,3447,4787
+"Indiana",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"Indiana : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-IN-99.A",122570,125608,124888,127770,130372,130490,130638,129510,116670,125181,122131,114696,110403,115395,104019,101759,98930,113460,102505,90073,94165,98055,90047,97013
+"Indiana : other renewables",,"ELEC.GEN.AOR-IN-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"Indiana : wind","thousand megawatthours","ELEC.GEN.WND-IN-99.A","--","--","--","--","--","--","--",238,1403,2934,3285,3210,3481,3496,4515,4899,5089,5437,6216,6288,7857,9985,8844,10312
+"Indiana : all solar","thousand megawatthours","ELEC.GEN.TSN-IN-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",111,168,243,313,389,450,526,791,1363,2203,3478
+"Michigan",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"Michigan : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-MI-99.A",111846,117889,111347,118487,121620,112557,119310,114990,101203,111551,109170,108158,105418,106817,113008,112122,112314,115837,116701,106625,115513,117497,120657,124200
+"Michigan : other renewables",,"ELEC.GEN.AOR-MI-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"Michigan : wind","thousand megawatthours","ELEC.GEN.WND-MI-99.A",0,0,3,2,2,2,3,141,300,360,456,1132,2800,3868,4797,4696,5191,5457,5826,6735,7697,9151,8292,9839
+"Michigan : all solar","thousand megawatthours","ELEC.GEN.TSN-MI-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",35,39,64,129,197,253,310,616,1105,1566,2205
+"Ohio",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"Ohio : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-OH-99.A",142262,147069,146638,148346,156976,155434,155156,153412,136090,143598,135586,129746,137284,134503,123079,119886,120814,127937,121550,122538,125948,135810,133223,142747
+"Ohio : other renewables",,"ELEC.GEN.AOR-OH-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"Ohio : wind","thousand megawatthours","ELEC.GEN.WND-OH-99.A","--","--","--","--",13,14,15,15,14,13,198,985,1146,1153,1203,1245,1589,1750,2043,2289,2587,3154,2819,2822
+"Ohio : all solar","thousand megawatthours","ELEC.GEN.TSN-OH-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",137,151,173,234,272,336,400,950,1247,1800,4510
+"Wisconsin",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"Wisconsin : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-WI-99.A",58763,58431,60122,60445,61825,61640,63391,63480,59959,64314,63289,63751,65963,61065,66360,64967,65107,65937,62774,61449,64276,61239,62549,65276
+"Wisconsin : other renewables",,"ELEC.GEN.AOR-WI-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"Wisconsin : wind","thousand megawatthours","ELEC.GEN.WND-WI-99.A",72,46,98,104,93,101,109,487,1052,1088,1188,1558,1558,1618,1589,1515,1641,1638,1878,1763,1593,1816,1738,1994
+"Wisconsin : all solar","thousand megawatthours","ELEC.GEN.TSN-WI-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",25,29,37,77,115,139,223,549,1027,1564,3250
+"West North Central",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"West North Central : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-WNC-99.A",281693,294304,300682,299483,303784,305615,315346,317700,315778,332835,332902,327475,330302,338303,329479,325988,340046,353902,344147,336428,358241,376502,351225,354289
+"West North Central : other renewables",,"ELEC.GEN.AOR-WNC-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"West North Central : wind","thousand megawatthours","ELEC.GEN.WND-WNC-99.A",1428,2305,2467,2632,4130,6144,7536,12454,19637,24182,31288,37561,44436,49249,51867,60923,72542,72907,82465,101616,115451,137224,125583,134372
+"West North Central : all solar","thousand megawatthours","ELEC.GEN.TSN-WNC-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",172,240,325,1055,1660,2022,2650,3310,3796,4586,5670
+"Iowa",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"Iowa : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-IA-99.A",40659,42528,42116,43248,44156,45483,49789,53087,51860,57509,56372,56675,56671,56853,56659,54393,57910,63381,62650,59637,67207,72982,69837,70464
+"Iowa : other renewables",,"ELEC.GEN.AOR-IA-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"Iowa : wind","thousand megawatthours","ELEC.GEN.WND-IA-99.A",488,919,982,1050,1647,2318,2757,4084,7421,9170,10709,14032,15568,16307,17873,20072,21373,21334,26305,34182,37098,45761,41439,44277
+"Iowa : all solar","thousand megawatthours","ELEC.GEN.TSN-IA-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",24,41,60,94,138,176,232,472,693,911,1142
+"Kansas",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"Kansas : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-KS-99.A",44749,47188,46568,46783,45863,45524,50122,46630,46677,47924,45360,44425,48473,49728,45527,47600,50933,51710,50888,54542,56631,62198,58457,57696
+"Kansas : other renewables",,"ELEC.GEN.AOR-KS-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"Kansas : wind","thousand megawatthours","ELEC.GEN.WND-KS-99.A",40,467,366,359,426,992,1153,1759,2863,3405,3720,5195,9433,10845,10999,14111,18598,18908,21124,23964,25694,29687,27273,29795
+"Kansas : all solar","thousand megawatthours","ELEC.GEN.TSN-KS-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",3,6,11,22,35,50,106,122,161,210,288
+"Minnesota",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"Minnesota : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-MN-99.A",48523,52778,55051,52364,53019,53238,54478,54763,52492,53670,53120,52754,51297,56998,56980,59479,58749,61517,59379,56510,59196,58967,57277,58595
+"Minnesota : other renewables",,"ELEC.GEN.AOR-MN-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"Minnesota : wind","thousand megawatthours","ELEC.GEN.WND-MN-99.A",897,906,978,812,1582,2055,2639,4355,5053,4792,6726,8176,8259,9691,9779,9933,11137,10714,10965,11831,12271,15091,14398,14781
+"Minnesota : all solar","thousand megawatthours","ELEC.GEN.TSN-MN-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",21,28,47,655,1123,1353,1773,2077,2144,2417,2689
+"Missouri",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"Missouri : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-MO-99.A",79545,81162,87225,87633,90828,91686,91153,91029,88354,92313,94876,91804,91627,87834,83640,78612,84607,85095,78279,72568,76941,79361,66703,66876
+"Missouri : other renewables",,"ELEC.GEN.AOR-MO-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"Missouri : wind","thousand megawatthours","ELEC.GEN.WND-MO-99.A","--","--","--","--","--","--","--",203,499,925,1178,1245,1167,1131,1033,1122,2032,2835,2858,3345,6534,7525,6775,6790
+"Missouri : all solar","thousand megawatthours","ELEC.GEN.TSN-MO-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",122,162,200,261,324,393,461,549,681,867,950
+"Nebraska",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"Nebraska : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-NE-99.A",30485,31618,30456,32009,31465,31670,32443,32374,34002,36630,36095,34217,37105,39431,39883,36525,35407,36966,37298,36849,37911,40693,39446,37229
+"Nebraska : other renewables",,"ELEC.GEN.AOR-NE-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"Nebraska : wind","thousand megawatthours","ELEC.GEN.WND-NE-99.A",3,8,38,38,97,261,217,214,383,422,1051,1284,1802,2737,3180,3798,5084,5549,7211,9115,9592,12614,11845,11891
+"Nebraska : all solar","thousand megawatthours","ELEC.GEN.TSN-NE-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",1,1,7,21,38,47,74,86,110,129,254
+"North Dakota",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"North Dakota : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-ND-99.A",30332,31306,31322,29936,31933,30881,31224,32735,34196,34740,35080,36125,35022,36463,37157,37856,41505,42615,41147,42176,43032,44401,42069,42557
+"North Dakota : other renewables",,"ELEC.GEN.AOR-ND-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"North Dakota : wind","thousand megawatthours","ELEC.GEN.WND-ND-99.A","--","--",59,215,220,369,621,1693,2998,4096,5236,5275,5519,6202,6506,8172,11359,10733,11213,13634,14935,16250,14477,14763
+"North Dakota : all solar","thousand megawatthours","ELEC.GEN.TSN-ND-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",0,0,0,0,0,1,1,1,2,2,3
+"South Dakota",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"South Dakota : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-SD-99.A",7401,7722,7944,7510,6521,7132,6137,7083,8197,10050,11999,11473,10109,10995,9633,11524,10936,12616,14507,14147,17322,17900,17436,20872
+"South Dakota : other renewables",,"ELEC.GEN.AOR-SD-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"South Dakota : wind","thousand megawatthours","ELEC.GEN.WND-SD-99.A",1,6,44,158,158,149,150,145,421,1372,2668,2354,2688,2336,2498,3714,2958,2835,2789,5544,9327,10295,9376,12074
+"South Dakota : all solar","thousand megawatthours","ELEC.GEN.TSN-SD-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",0,1,1,3,3,3,4,4,4,50,346
+"South Atlantic",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"South Atlantic : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-SAT-99.A",727852,775207,787773,797795,822781,809350,835190,800786,754700,802695,762286,747508,760976,784957,792087,813880,792859,819993,811088,795002,802487,807112,800717,835080
+"South Atlantic : other renewables",,"ELEC.GEN.AOR-SAT-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"South Atlantic : wind","thousand megawatthours","ELEC.GEN.WND-SAT-99.A","--",9,170,161,154,174,168,392,742,943,1378,1611,1713,1780,1816,1971,2719,2888,2680,2995,2711,3106,3151,3144
+"South Atlantic : all solar","thousand megawatthours","ELEC.GEN.TSN-SAT-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",1919,2733,6080,10482,14520,18803,25898,34909,43481,50516,60789
+"Delaware",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"Delaware : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-DE-99.A",6808,6002,7392,7856,8137,7182,8534,7524,4842,5628,6590,8634,7761,7704,7810,8731,7496,6241,5259,5205,4305,5308,4772,4799
+"Delaware : other renewables",,"ELEC.GEN.AOR-DE-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"Delaware : wind","thousand megawatthours","ELEC.GEN.WND-DE-99.A","--","--","--","--","--","--","--","--","--",3,5,4,4,5,5,5,5,5,5,5,5,4,4,3
+"Delaware : all solar","thousand megawatthours","ELEC.GEN.TSN-DE-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",121,128,119,143,160,178,183,196,222,344,369
+"District Of Columbia",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"District Of Columbia : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-DC-99.A",123,262,74,36,226,81,75,72,35,200,201,72,66,68,54,76,67,79,174,201,211,160,172,187
+"District Of Columbia : other renewables",,"ELEC.GEN.AOR-DC-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"District Of Columbia : wind","thousand megawatthours","ELEC.GEN.WND-DC-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--"
+"District Of Columbia : all solar","thousand megawatthours","ELEC.GEN.TSN-DC-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",31,32,32,52,71,103,131,166,198,231,289
+"Florida",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"Florida : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-FL-99.A",190945,203353,212610,218118,220256,223752,225416,219637,217952,229096,221895,221096,222399,230016,237413,238262,238413,244252,245603,250828,247907,258910,259798,266119
+"Florida : other renewables",,"ELEC.GEN.AOR-FL-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"Florida : wind","thousand megawatthours","ELEC.GEN.WND-FL-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--"
+"Florida : all solar","thousand megawatthours","ELEC.GEN.TSN-FL-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",361,380,429,1169,2841,4590,7627,10754,13885,17804,23261
+"Georgia",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"Georgia : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-GA-99.A",118317,126512,124077,126813,136668,138010,145155,136173,128698,137577,124749,122306,120954,125837,128818,133380,127455,129239,128692,120129,124201,126485,129222,139805
+"Georgia : other renewables",,"ELEC.GEN.AOR-GA-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"Georgia : wind","thousand megawatthours","ELEC.GEN.WND-GA-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--"
+"Georgia : all solar","thousand megawatthours","ELEC.GEN.TSN-GA-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",218,229,1076,2212,2265,2467,4109,5241,7332,8069,9753
+"Maryland",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"Maryland : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-MD-99.A",49062,48279,52244,52053,52662,48957,50198,47361,43775,43607,41818,37810,35851,37834,36366,37167,34104,43810,39326,36029,38235,37139,36001,35425
+"Maryland : other renewables",,"ELEC.GEN.AOR-MD-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"Maryland : wind","thousand megawatthours","ELEC.GEN.WND-MD-99.A","--","--","--","--","--","--","--","--","--",1,271,322,322,324,435,527,561,570,520,546,517,498,482,558
+"Maryland : all solar","thousand megawatthours","ELEC.GEN.TSN-MD-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",351,457,728,1002,1246,1460,1522,1657,1996,2325,2515
+"North Carolina",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"North Carolina : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-NC-99.A",117496,124468,127582,126330,129749,125215,130115,125239,118407,128678,118390,116682,125936,128144,128388,130779,128468,134249,131174,124363,129923,134257,126553,134965
+"North Carolina : other renewables",,"ELEC.GEN.AOR-NC-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"North Carolina : wind","thousand megawatthours","ELEC.GEN.WND-NC-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--",6,471,543,523,546,515,547,529,530
+"North Carolina : all solar","thousand megawatthours","ELEC.GEN.TSN-NC-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",803,1460,3589,5300,6323,7725,8633,10578,11858,12216,12752
+"South Carolina",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"South Carolina : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-SC-99.A",89159,96563,93773,97940,102515,99268,103402,100978,100125,104153,102973,96756,95250,97158,96532,96986,93081,99364,100108,98529,98390,98710,100853,100485
+"South Carolina : other renewables",,"ELEC.GEN.AOR-SC-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"South Carolina : wind","thousand megawatthours","ELEC.GEN.WND-SC-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--"
+"South Carolina : all solar","thousand megawatthours","ELEC.GEN.TSN-SC-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",9,11,41,217,759,1187,2092,2707,2942,3351,3563
+"Virginia",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"Virginia : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-VA-99.A",74105,75006,75309,78900,78943,73070,78361,72679,70082,72966,66671,70739,76897,77137,84412,92555,90417,95509,96828,103056,93478,89477,91059,102699
+"Virginia : other renewables",,"ELEC.GEN.AOR-VA-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"Virginia : wind","thousand megawatthours","ELEC.GEN.WND-VA-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--",50,51,47,50
+"Virginia : all solar","thousand megawatthours","ELEC.GEN.TSN-VA-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",22,30,62,379,845,1081,1585,3588,5015,6129,8042
+"West Virginia",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"West Virginia : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-WV-99.A",81837,94762,94712,89750,93626,93816,93933,91123,70783,80789,79000,73413,75863,81060,72295,75943,73357,67249,63926,56662,65836,56665,52287,50595
+"West Virginia : other renewables",,"ELEC.GEN.AOR-WV-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"West Virginia : wind","thousand megawatthours","ELEC.GEN.WND-WV-99.A","--",9,170,161,154,174,168,392,742,939,1103,1286,1387,1451,1376,1432,1682,1770,1631,1898,1624,2007,2089,2003
+"West Virginia : all solar","thousand megawatthours","ELEC.GEN.TSN-WV-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",4,4,6,8,10,12,15,22,33,47,247
+"East South Central",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"East South Central : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-ESC-99.A",370431,364030,361576,373142,377956,379827,386209,382602,362304,387204,387365,375137,372776,374871,375994,364881,351917,368891,362770,348235,359422,359754,353377,363376
+"East South Central : other renewables",,"ELEC.GEN.AOR-ESC-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"East South Central : wind","thousand megawatthours","ELEC.GEN.WND-ESC-99.A","--",4,4,4,3,55,50,50,52,41,53,47,47,51,46,38,43,41,38,39,28,15,16,360
+"East South Central : all solar","thousand megawatthours","ELEC.GEN.TSN-ESC-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",105,155,242,509,1034,1240,1336,1497,2342,3199,4632
+"Alabama",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"Alabama : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-AL-99.A",125345,132921,137487,137355,137949,140895,143826,145870,143256,152151,156339,152879,150573,149340,152477,142385,139964,145058,142679,137547,142733,144789,139435,142921
+"Alabama : other renewables",,"ELEC.GEN.AOR-AL-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"Alabama : wind","thousand megawatthours","ELEC.GEN.WND-AL-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--"
+"Alabama : all solar","thousand megawatthours","ELEC.GEN.TSN-AL-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",3,3,39,189,368,399,384,513,916,1223,1282
+"Kentucky",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"Kentucky : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-KY-99.A",95418,92107,91719,94530,97822,98792,97225,97863,90630,98218,98351,89950,89741,90896,83544,80274,73179,78804,71804,63540,69908,69147,63217,66951
+"Kentucky : other renewables",,"ELEC.GEN.AOR-KY-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"Kentucky : wind","thousand megawatthours","ELEC.GEN.WND-KY-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--"
+"Kentucky : all solar","thousand megawatthours","ELEC.GEN.TSN-KY-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",13,14,32,45,71,85,94,115,148,286,438
+"Mississippi",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"Mississippi : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-MS-99.A",53446,42889,40148,43663,45067,46229,50044,48206,48701,54487,51571,54584,52810,55127,64758,62881,59728,63474,65959,66582,67723,67781,72933,77337
+"Mississippi : other renewables",,"ELEC.GEN.AOR-MS-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"Mississippi : wind","thousand megawatthours","ELEC.GEN.WND-MS-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--",347
+"Mississippi : all solar","thousand megawatthours","ELEC.GEN.TSN-MS-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",2,2,6,96,337,336,445,441,526,656,1721
+"Tennessee",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"Tennessee : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-TN-99.A",96222,96114,92222,97595,97117,93911,95113,90663,79717,82349,81104,77724,79652,79507,75215,79341,79046,81555,82327,80566,79057,78036,77791,76167
+"Tennessee : other renewables",,"ELEC.GEN.AOR-TN-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"Tennessee : wind","thousand megawatthours","ELEC.GEN.WND-TN-99.A","--",4,4,4,3,55,50,50,52,41,53,47,47,51,46,38,43,41,38,39,28,15,16,13
+"Tennessee : all solar","thousand megawatthours","ELEC.GEN.TSN-TN-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",87,136,164,179,258,420,413,427,752,1034,1191
+"West South Central",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"West South Central : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-WSC-99.A",562916,587395,585113,601129,605688,614288,625486,628620,620686,647831,676881,676122,669387,673607,689334,700416,685020,734662,734205,712298,722414,781608,797511,821737
+"West South Central : other renewables",,"ELEC.GEN.AOR-WSC-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"West South Central : wind","thousand megawatthours","ELEC.GEN.WND-WSC-99.A",1188,2656,2624,3710,5085,8383,10856,18583,22724,30059,36153,40372,47036,51942,58864,77600,90660,103039,112629,121858,132015,152340,156867,162244
+"West South Central : all solar","thousand megawatthours","ELEC.GEN.TSN-WSC-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",557,789,1355,2947,4449,5933,10899,18372,27039,34353,50430
+"Arkansas",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"Arkansas : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-AR-99.A",47192,47612,50401,51928,47795,52169,54596,55051,57458,61000,61308,65006,60322,61592,55559,60445,60775,67999,64443,54641,61100,65905,63196,61542
+"Arkansas : other renewables",,"ELEC.GEN.AOR-AR-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"Arkansas : wind","thousand megawatthours","ELEC.GEN.WND-AR-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--"
+"Arkansas : all solar","thousand megawatthours","ELEC.GEN.TSN-AR-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",5,6,33,41,225,246,358,631,967,1194,2840
+"Louisiana",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"Louisiana : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-LA-99.A",87894,94971,94885,98172,92617,90922,92578,92453,90994,102885,105491,103408,102010,104229,107812,107269,97719,102128,100175,100774,98715,105505,97785,99623
+"Louisiana : other renewables",,"ELEC.GEN.AOR-LA-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"Louisiana : wind","thousand megawatthours","ELEC.GEN.WND-LA-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--"
+"Louisiana : all solar","thousand megawatthours","ELEC.GEN.TSN-LA-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",104,153,191,202,230,242,296,407,468,592,1535
+"Oklahoma",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"Oklahoma : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-OK-99.A",55249,59183,60627,60730,68608,70615,72819,76329,75067,72251,74606,77897,73674,70156,76136,78655,73732,87181,86386,83368,80755,84635,89236,94069
+"Oklahoma : other renewables",,"ELEC.GEN.AOR-OK-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"Oklahoma : wind","thousand megawatthours","ELEC.GEN.WND-OK-99.A","--","--",54,573,848,1712,1849,2358,2698,3808,5605,8158,11162,11937,14031,20069,23599,27338,29008,29417,32540,37553,37012,37967
+"Oklahoma : all solar","thousand megawatthours","ELEC.GEN.TSN-OK-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",2,5,9,38,73,79,93,128,167,242,540
+"Texas",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"Texas : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-TX-99.A",372580,385629,379200,390299,396669,400583,405492,404788,397168,411695,435477,429813,433380,437630,449826,454048,452794,477352,483201,473515,481844,525563,547295,566503
+"Texas : other renewables",,"ELEC.GEN.AOR-TX-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"Texas : wind","thousand megawatthours","ELEC.GEN.WND-TX-99.A",1188,2656,2570,3138,4237,6671,9006,16225,20026,26251,30548,32214,35874,40005,44833,57531,67061,75700,83620,92441,99474,114787,119855,124278
+"Texas : all solar","thousand megawatthours","ELEC.GEN.TSN-TX-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",446,624,1122,2665,3921,5366,10151,17205,25437,32325,45515
+"Mountain",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"Mountain : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-MTN-99.A",318485,318135,325285,343713,348941,352510,367325,379687,369302,366054,364847,367566,376452,373334,373168,364116,361265,371498,372421,358058,370201,375324,372230,382802
+"Mountain : other renewables",,"ELEC.GEN.AOR-MTN-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"Mountain : wind","thousand megawatthours","ELEC.GEN.WND-MTN-99.A",414,586,696,1350,2288,3486,4108,6651,8260,10484,15317,17080,19285,20257,18945,23842,24719,26339,28534,33724,43073,50193,49227,54179
+"Mountain : all solar","thousand megawatthours","ELEC.GEN.TSN-MTN-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",6659,8186,12031,17284,19140,20363,23490,27829,33450,38769,51353
+"Arizona",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"Arizona : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-AZ-99.A",89911,94132,94396,104564,101479,104393,113341,119459,111971,111751,108125,110905,113326,112257,113142,108763,105852,111925,113552,109305,108605,104699,111839,116027
+"Arizona : other renewables",,"ELEC.GEN.AOR-AZ-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"Arizona : wind","thousand megawatthours","ELEC.GEN.WND-AZ-99.A","--","--","--","--","--","--","--","--",30,135,256,532,450,468,452,542,570,530,554,644,1600,1564,1733,2540
+"Arizona : all solar","thousand megawatthours","ELEC.GEN.TSN-AZ-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",4243,4827,5369,6835,7406,7850,8749,10081,11063,12309,16266
+"Colorado",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"Colorado : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-CO-99.A",46876,45600,46617,47869,49617,50698,53907,53442,50566,50721,51433,52557,52937,53847,52393,54418,53844,55386,56338,54115,56838,58044,57542,58798
+"Colorado : other renewables",,"ELEC.GEN.AOR-CO-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"Colorado : wind","thousand megawatthours","ELEC.GEN.WND-CO-99.A",49,139,147,220,776,866,1292,3221,3164,3452,5200,5969,7204,7369,7475,9421,9315,9745,10852,13386,15126,16911,16091,17602
+"Colorado : all solar","thousand megawatthours","ELEC.GEN.TSN-CO-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",606,643,999,1485,1653,1852,2204,2786,3772,5319,6974
+"Idaho",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"Idaho : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-ID-99.A",9347,9787,10423,10863,10825,13386,11484,11971,13100,12025,16569,15499,15186,15184,15667,15661,17396,18172,18408,17686,16836,16278,17842,20035
+"Idaho : other renewables",,"ELEC.GEN.AOR-ID-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"Idaho : wind","thousand megawatthours","ELEC.GEN.WND-ID-99.A","--","--","--","--","--",170,172,207,313,441,1307,1891,2460,2806,2270,2578,2545,2655,2551,2771,2680,2442,2320,3016
+"Idaho : all solar","thousand megawatthours","ELEC.GEN.TSN-ID-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",4,6,40,476,589,615,653,684,712,1092,1294
+"Montana",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"Montana : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-MT-99.A",24232,25474,26269,26789,27939,28244,28931,29637,26713,29791,30129,27805,27687,30258,29302,27784,28221,28213,27797,23353,24948,27089,26896,26873
+"Montana : other renewables",,"ELEC.GEN.AOR-MT-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"Montana : wind","thousand megawatthours","ELEC.GEN.WND-MT-99.A","--","--","--","--","--",436,496,593,821,930,1265,1262,1755,1974,1965,2140,2155,2153,2373,3059,3473,4022,4557,5815
+"Montana : all solar","thousand megawatthours","ELEC.GEN.TSN-MT-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",11,8,11,29,54,54,67,76,85,316,473
+"Nevada",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"Nevada : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-NV-99.A",33876,32089,33195,37667,40214,31860,32670,35090,37705,35146,31936,35173,36444,36001,39047,39787,38201,39640,39890,40425,41755,42592,42164,45528
+"Nevada : other renewables",,"ELEC.GEN.AOR-NV-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"Nevada : wind","thousand megawatthours","ELEC.GEN.WND-NV-99.A","--","--","--","--","--","--","--","--","--","--","--",129,251,300,310,344,361,312,329,325,340,316,291,319
+"Nevada : all solar","thousand megawatthours","ELEC.GEN.TSN-NV-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",1117,1844,3496,4558,5215,5491,6407,7656,10415,11381,14497
+"New Mexico",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"New Mexico : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-NM-99.A",33612,30662,32736,32940,35136,37266,35985,37010,39674,36252,38181,36636,35871,32306,32701,32912,33597,32674,35175,34076,35192,40889,39269,39697
+"New Mexico : other renewables",,"ELEC.GEN.AOR-NM-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"New Mexico : wind","thousand megawatthours","ELEC.GEN.WND-NM-99.A","--","--",183,513,795,1255,1393,1643,1547,1832,2104,2226,2193,2275,2090,3605,4595,6092,6892,7224,10581,14435,14914,15136
+"New Mexico : all solar","thousand megawatthours","ELEC.GEN.TSN-NM-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",635,757,909,1397,1599,1667,2114,2212,2566,3314,5087
+"Utah",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"Utah : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-UT-99.A",35854,36608,38024,38212,38165,41263,45373,46579,43543,42249,40836,39403,42517,43785,41949,38134,37412,39375,39117,37087,42566,39386,33497,35134
+"Utah : other renewables",,"ELEC.GEN.AOR-UT-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"Utah : wind","thousand megawatthours","ELEC.GEN.WND-UT-99.A","--","--","--","--","--","--","--",24,160,448,573,704,540,660,626,822,858,795,819,803,825,723,683,748
+"Utah : all solar","thousand megawatthours","ELEC.GEN.TSN-UT-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",40,99,1203,2500,2618,2646,3117,4137,4629,4835,6306
+"Wyoming",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"Wyoming : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-WY-99.A",44777,43784,43627,44808,45567,45400,45633,46500,46029,48119,47638,49589,52483,49696,48967,46657,46742,46112,42146,42011,43461,46347,43181,40709
+"Wyoming : other renewables",,"ELEC.GEN.AOR-WY-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"Wyoming : wind","thousand megawatthours","ELEC.GEN.WND-WY-99.A",365,447,366,617,717,759,755,963,2226,3247,4612,4369,4433,4406,3757,4389,4321,4057,4163,5513,8448,9780,8637,9002
+"Wyoming : all solar","thousand megawatthours","ELEC.GEN.TSN-WY-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",2,3,3,5,7,189,178,197,209,202,456
+"Pacific Contiguous",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"Pacific Contiguous : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-PCC-99.A",326697,334074,341849,348327,351584,378343,372916,377531,365937,362725,375763,377287,374146,375262,363858,371232,384772,376336,370506,372823,368990,381392,381281,381250
+"Pacific Contiguous : other renewables",,"ELEC.GEN.AOR-PCC-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"Pacific Contiguous : wind","thousand megawatthours","ELEC.GEN.WND-PCC-99.A",3588,4595,4943,5661,5495,6852,9270,11618,12882,14743,18790,22697,27282,27816,25936,28708,25975,29371,26981,31626,33851,30848,30522,34031
+"Pacific Contiguous : all solar","thousand megawatthours","ELEC.GEN.TSN-PCC-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",14746,21001,27319,35447,40831,44644,49311,56837,65399,72277,83843
+"California",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"California : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-CA-99.A",198596,184210,192789,194780,200293,216799,210848,207984,204776,204126,200805,199519,200077,198808,196704,196963,206147,195466,201784,193084,197165,203384,216629,214191
+"California : other renewables",,"ELEC.GEN.AOR-CA-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"California : wind","thousand megawatthours","ELEC.GEN.WND-CA-99.A",3500,3803,3895,4306,4262,4883,5585,5385,5840,6079,7752,9754,12822,12992,12230,13509,12823,14024,13735,13583,15177,14638,14019,15648
+"California : all solar","thousand megawatthours","ELEC.GEN.TSN-CA-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",14606,20829,27037,34958,39904,43493,47680,54712,62910,68978,80152
+"Oregon",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"Oregon : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-OR-99.A",45052,47099,48966,51381,49325,53341,55078,58718,56691,55127,59695,60933,59896,60120,57867,60182,62714,64114,62258,63625,61017,61318,61692,64661
+"Oregon : other renewables",,"ELEC.GEN.AOR-OR-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"Oregon : wind","thousand megawatthours","ELEC.GEN.WND-OR-99.A",89,376,444,619,734,931,1247,2575,3470,3920,4775,6343,7456,7555,6632,7157,6227,7447,6569,8777,9376,8149,8954,9519
+"Oregon : all solar","thousand megawatthours","ELEC.GEN.TSN-OR-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",104,116,192,373,776,903,1335,1766,2013,2416,2620
+"Washington",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"Washington : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-WA-99.A",83049,102765,100095,102165,101966,108203,106990,110828,104470,103473,115263,116835,114173,116334,109287,114087,115912,116757,106464,116114,110808,116691,102961,102398
+"Washington : other renewables",,"ELEC.GEN.AOR-WA-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"Washington : wind","thousand megawatthours","ELEC.GEN.WND-WA-99.A","--",417,604,737,498,1038,2438,3657,3572,4745,6262,6600,7004,7268,7075,8042,6925,7900,6677,9266,9298,8061,7550,8863
+"Washington : all solar","thousand megawatthours","ELEC.GEN.TSN-WA-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",37,56,90,116,151,248,296,359,477,883,1071
+"Pacific Noncontiguous",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"Pacific Noncontiguous : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-PCN-99.A",17377,18430,17315,17937,18099,18233,18355,18151,17713,17596,17594,17416,16764,16247,16404,16284,16310,16044,15821,15355,15778,16032,15912,15851
+"Pacific Noncontiguous : other renewables",,"ELEC.GEN.AOR-PCN-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"Pacific Noncontiguous : wind","thousand megawatthours","ELEC.GEN.WND-PCN-99.A",3,2,2,7,7,80,239,240,258,274,353,416,649,731,772,808,674,757,672,721,790,765,746,787
+"Pacific Noncontiguous : all solar","thousand megawatthours","ELEC.GEN.TSN-PCN-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",590,687,850,1148,1216,1385,1701,1770,1897,2059,2306
+"Alaska",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"Alaska : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-AK-99.A",6744,6767,6339,6527,6577,6674,6821,6775,6702,6760,6871,6946,6497,6043,6285,6335,6497,6247,6071,6276,6596,6694,6718,6691
+"Alaska : other renewables",,"ELEC.GEN.AOR-AK-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"Alaska : wind","thousand megawatthours","ELEC.GEN.WND-AK-99.A",1,"--","--","--",1,1,1,0,7,13,12,37,145,152,160,169,142,155,143,129,132,139,111,123
+"Alaska : all solar","thousand megawatthours","ELEC.GEN.TSN-AK-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--","--","--",1,2,3,4,7,12,16,18,28
+"Hawaii",,"ELEC.GEN..A",,,,,,,,,,,,,,,,,,,,,,,,
+"Hawaii : all fuels (utility-scale)","thousand megawatthours","ELEC.GEN.ALL-HI-99.A",10633,11663,10976,11410,11523,11559,11533,11376,11011,10836,10723,10469,10267,10204,10120,9949,9813,9797,9750,9079,9182,9337,9194,9161
+"Hawaii : other renewables",,"ELEC.GEN.AOR-HI-99.A",,,,,,,,,,,,,,,,,,,,,,,,
+"Hawaii : wind","thousand megawatthours","ELEC.GEN.WND-HI-99.A",2,2,2,7,7,80,238,240,251,261,341,378,503,579,613,639,532,602,529,592,658,625,634,663
+"Hawaii : all solar","thousand megawatthours","ELEC.GEN.TSN-HI-99.A","--","--","--","--","--","--","--","--","--","--","--","--","--",590,687,848,1146,1213,1381,1695,1758,1882,2040,2278

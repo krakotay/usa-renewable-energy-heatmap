@@ -1,0 +1,5 @@
+{
+  "name": "USA Renewable Energy Heatmap",
+  "description": "An interactive heatmap of the United States displaying the share of electricity generation from solar and wind power for each state in 2024. Data is sourced from the U.S. Energy Information Administration.",
+  "requestFramePermissions": []
+}
