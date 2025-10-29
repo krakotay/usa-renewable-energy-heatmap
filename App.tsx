@@ -24,9 +24,10 @@ const App: React.FC = () => {
     const fetchData = async () => {
       setIsLoading(true);
       try {
+        // alert(import.meta.env.BASE_URL);
         const [energyResponse, populationResponse] = await Promise.all([
-          fetch('/Net_generation_for_all_sectors.csv'),
-          fetch('/us-states---ranking-by-population-2025.csv')
+          fetch(import.meta.env.BASE_URL + '/Net_generation_for_all_sectors.csv'),
+          fetch( import.meta.env.BASE_URL + '/us-states---ranking-by-population-2025.csv')
         ]);
         
         if (!energyResponse.ok || !populationResponse.ok) {

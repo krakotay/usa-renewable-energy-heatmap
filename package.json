@@ -1,14 +1,17 @@
 {
   "name": "usa-renewable-energy-heatmap",
   "private": true,
+  "homepage": "https://krakotay.github.io/usa-renewable-energy-heatmap",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "vite build && cpz *.csv dist && gh-pages -d dist"
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },
