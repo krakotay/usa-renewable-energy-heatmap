@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && cpz *.csv dist",
     "preview": "vite preview",
     "deploy": "vite build && cpz *.csv dist && gh-pages -d dist"
   },

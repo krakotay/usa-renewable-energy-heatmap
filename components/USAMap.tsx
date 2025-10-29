@@ -4,18 +4,18 @@ import React, { useMemo, useState, useRef, useCallback } from 'react';
 import type { StateData } from '../types';
 import { STATE_PATHS, STATE_LABEL_COORDS, STATE_LINES } from './usaMapData';
 
-const getColorForPercentage = (percentage: number, min: number, max: number): string => {
-  if (percentage <= 0) return '#4A5568'; // gray-700
-  // Map percentage to a hue from 0 (red) to 120 (green)
-  const ratio = (percentage - min) / (max - min);
+const getColorForValue = (value: number, min: number, max: number): string => {
+  if (value <= 0) return '#4A5568'; // gray-700
+  const ratio = (max > min) ? (value - min) / (max - min) : 0;
   const hue = Math.max(0, Math.min(120, ratio * 120));
   return `hsl(${hue}, 80%, 50%)`;
 };
 
 interface USAMapProps {
   data: StateData[];
-  minPercentage: number;
-  maxPercentage: number;
+  minVal: number;
+  maxVal: number;
+  mapMode: 'percentage' | 'absolute';
   onStateHover: (data: StateData | null, position: { x: number; y: number } | null) => void;
   perCapitaFilter: number;
 }
@@ -37,13 +37,24 @@ const StatePath: React.FC<{
   />
 );
 
-const StateLabel: React.FC<{ stateId: string, percentage: number, isFiltered: boolean }> = ({ stateId, percentage, isFiltered }) => {
+const StateLabel: React.FC<{ 
+    stateId: string, 
+    value: number, 
+    mode: 'percentage' | 'absolute', 
+    isFiltered: boolean 
+}> = ({ stateId, value, mode, isFiltered }) => {
     const coords = STATE_LABEL_COORDS[stateId];
     if (!coords) return null;
 
     const isSmall = ['VT', 'NH', 'MA', 'RI', 'CT', 'NJ', 'DE', 'MD', 'DC'].includes(stateId);
     const idFontSize = isSmall ? '8px' : '10px';
-    const percentFontSize = isSmall ? '9px' : '11px';
+    const dataFontSize = isSmall ? '9px' : '11px';
+
+    const formatLabelValue = (val: number) => {
+        if (mode === 'percentage') return `${val.toFixed(0)}%`;
+        if (val < 1000) return `${Math.round(val)}`;
+        return `${(val / 1000).toFixed(1)}k`;
+    };
     
     return (
         <g className="pointer-events-none">
@@ -52,14 +63,15 @@ const StateLabel: React.FC<{ stateId: string, percentage: number, isFiltered: bo
                 y={coords[1]}
                 textAnchor="middle"
                 alignmentBaseline="middle"
-                className={`font-sans font-bold transition-colors ${isFiltered ? 'fill-gray-500' : 'fill-black'}`}
+                className={`font-sans font-bold transition-colors ${isFiltered ? 'fill-gray-500' : 'fill-white'}`}
+                style={{ textShadow: '0 0 2px black, 0 0 2px black' }}
             >
                 <tspan x={coords[0]} dy="-0.5em" style={{ fontSize: idFontSize }}>
                     {stateId}
                 </tspan>
-                 {percentage > 0 && !isFiltered && (
-                    <tspan x={coords[0]} dy="1.2em" style={{ fontSize: percentFontSize }}>
-                        {`${percentage.toFixed(0)}%`}
+                 {value > 0 && !isFiltered && (
+                    <tspan x={coords[0]} dy="1.2em" style={{ fontSize: dataFontSize }}>
+                        {formatLabelValue(value)}
                     </tspan>
                 )}
             </text>
@@ -67,7 +79,7 @@ const StateLabel: React.FC<{ stateId: string, percentage: number, isFiltered: bo
     );
 };
 
-export const USAMap: React.FC<USAMapProps> = ({ data, minPercentage, maxPercentage, onStateHover, perCapitaFilter }) => {
+export const USAMap: React.FC<USAMapProps> = ({ data, minVal, maxVal, mapMode, onStateHover, perCapitaFilter }) => {
   const dataMap = useMemo(() => new Map(data.map(d => [d.id, d])), [data]);
   const svgRef = useRef<SVGSVGElement>(null);
   const [transform, setTransform] = useState({ scale: 1, x: 0, y: 0 });
@@ -169,8 +181,12 @@ export const USAMap: React.FC<USAMapProps> = ({ data, minPercentage, maxPercenta
                     
                     const isFiltered = id === 'DC' || (state ? state.perCapitaKWh < perCapitaFilter : false);
 
+                    const valueToColor = mapMode === 'percentage' 
+                        ? (state?.percentage ?? 0)
+                        : ((state?.wind ?? 0) + (state?.solar ?? 0));
+                        
                     const fill = state 
-                        ? getColorForPercentage(state.percentage, minPercentage, maxPercentage)
+                        ? getColorForValue(valueToColor, minVal, maxVal)
                         : '#4A5568';
                     
                     return (
@@ -195,7 +211,11 @@ export const USAMap: React.FC<USAMapProps> = ({ data, minPercentage, maxPercenta
                     const state = dataMap.get(id);
                     if (!state) return null;
                     const isFiltered = state.perCapitaKWh < perCapitaFilter;
-                    return <StateLabel key={`label-${id}`} stateId={id} percentage={state.percentage} isFiltered={isFiltered} />;
+                     const valueForLabel = mapMode === 'percentage'
+                        ? state.percentage
+                        : state.wind + state.solar;
+
+                    return <StateLabel key={`label-${id}`} stateId={id} value={valueForLabel} mode={mapMode} isFiltered={isFiltered} />;
                 })}
             </g>
         </g>

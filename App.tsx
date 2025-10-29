@@ -3,17 +3,20 @@ import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { USAMap } from './components/USAMap';
 import { Tooltip } from './components/Tooltip';
 import { FilterControl } from './components/FilterControl';
+import { ModeToggle } from './components/ModeToggle';
 import { parseEnergyData, parsePopulationData } from './services/dataParser';
 import type { StateData, TooltipData } from './types';
 
 const App: React.FC = () => {
   const [data, setData] = useState<StateData[]>([]);
-  const [minMax, setMinMax] = useState<{ min: number; max: number }>({ min: 0, max: 1 });
+  const [minMaxPercentage, setMinMaxPercentage] = useState<{ min: number; max: number }>({ min: 0, max: 1 });
+  const [minMaxAbsolute, setMinMaxAbsolute] = useState<{ min: number; max: number }>({ min: 0, max: 1 });
   const [tooltip, setTooltip] = useState<TooltipData | null>(null);
   const [perCapitaFilter, setPerCapitaFilter] = useState<number>(0);
   const [usAveragePerCapita, setUsAveragePerCapita] = useState<number>(0);
   const [maxPerCapita, setMaxPerCapita] = useState<number>(0);
 
+  const [mapMode, setMapMode] = useState<'percentage' | 'absolute'>('percentage');
   const [selectedYear, setSelectedYear] = useState<number>(2024);
   const [rawEnergyData, setRawEnergyData] = useState<string | null>(null);
   const [populationMap, setPopulationMap] = useState<Map<string, number> | null>(null);
@@ -24,10 +27,9 @@ const App: React.FC = () => {
     const fetchData = async () => {
       setIsLoading(true);
       try {
-        // alert(import.meta.env.BASE_URL);
         const [energyResponse, populationResponse] = await Promise.all([
           fetch(import.meta.env.BASE_URL + '/Net_generation_for_all_sectors.csv'),
-          fetch( import.meta.env.BASE_URL + '/us-states---ranking-by-population-2025.csv')
+          fetch(import.meta.env.BASE_URL + '/us-states---ranking-by-population-2025.csv')
         ]);
         
         if (!energyResponse.ok || !populationResponse.ok) {
@@ -67,9 +69,18 @@ const App: React.FC = () => {
               const min = Math.min(...percentages);
               const reasonablePercentages = percentages.filter(p => p <= 100);
               const max = reasonablePercentages.length > 0 ? Math.max(...reasonablePercentages) : (percentages.length > 0 ? Math.max(...percentages) : 1);
-              setMinMax({ min, max });
+              setMinMaxPercentage({ min, max });
             } else {
-                setMinMax({min: 0, max: 1});
+                setMinMaxPercentage({min: 0, max: 1});
+            }
+
+            const absoluteValues = processedData.map(d => d.wind + d.solar).filter(v => v > 0 && isFinite(v));
+             if (absoluteValues.length > 0) {
+                const min = Math.min(...absoluteValues);
+                const max = Math.max(...absoluteValues);
+                setMinMaxAbsolute({ min, max });
+            } else {
+                setMinMaxAbsolute({ min: 0, max: 1 });
             }
 
             let totalGeneration = 0;
@@ -89,7 +100,8 @@ const App: React.FC = () => {
                 setMaxPerCapita(10000); // A default max
             }
         } else {
-          setMinMax({min: 0, max: 1});
+          setMinMaxPercentage({min: 0, max: 1});
+          setMinMaxAbsolute({ min: 0, max: 1 });
           setUsAveragePerCapita(0);
           setMaxPerCapita(10000);
         }
@@ -113,8 +125,8 @@ const App: React.FC = () => {
     }
   }, []);
 
-  const Legend: React.FC<{ min: number; max: number }> = useMemo(() => {
-    return ({ min, max }) => {
+  const Legend: React.FC<{ min: number; max: number, mode: 'percentage' | 'absolute' }> = useMemo(() => {
+    return ({ min, max, mode }) => {
       const gradientStops = 5;
       const stops = Array.from({ length: gradientStops }, (_, i) => {
         const value = min + (i / (gradientStops - 1)) * (max - min);
@@ -125,14 +137,20 @@ const App: React.FC = () => {
           color: `hsl(${hue}, 80%, 50%)`,
         };
       });
+      
+      const formatValue = (v: number) => {
+          if (mode === 'percentage') return `${v.toFixed(1)}%`;
+          if (v < 1000) return Math.round(v);
+          return `${(v / 1000).toFixed(1)}k`;
+      }
 
       return (
         <div className="absolute bottom-4 left-4 bg-white/80 backdrop-blur-sm p-3 rounded-lg shadow-lg border border-gray-200 text-gray-800 text-sm w-full max-w-xs md:max-w-sm">
-          <p className="font-bold mb-2">Solar + Wind Generation %</p>
+          <p className="font-bold mb-2">{mode === 'percentage' ? 'Solar + Wind Generation %' : 'Solar + Wind Generation (GWh)'}</p>
           <div className="flex items-center space-x-2">
-            <span className="w-10 text-right text-gray-600">{min.toFixed(1)}%</span>
+            <span className="w-14 text-right text-gray-600">{formatValue(min)}</span>
             <div className="flex-1 h-4 rounded-full" style={{ background: `linear-gradient(to right, ${stops.map(s => s.color).join(', ')})` }}></div>
-            <span className="w-10 text-left text-gray-600">{max.toFixed(1)}%</span>
+            <span className="w-14 text-left text-gray-600">{formatValue(max)}</span>
           </div>
         </div>
       );
@@ -140,6 +158,7 @@ const App: React.FC = () => {
   }, []);
 
   const years = Array.from({ length: 2024 - 2001 + 1 }, (_, i) => 2024 - i);
+  const currentMinMax = mapMode === 'percentage' ? minMaxPercentage : minMaxAbsolute;
 
   return (
     <div className="min-h-screen bg-white text-gray-800 flex flex-col items-center p-4 overflow-hidden relative">
@@ -147,6 +166,7 @@ const App: React.FC = () => {
         <h1 className="text-3xl md:text-4xl font-bold text-slate-800">USA Renewable Energy Heatmap {selectedYear}</h1>
         <p className="text-gray-600 mt-1">Share of Electricity from Solar & Wind (Population data from 2024)</p>
       </header>
+       <ModeToggle mapMode={mapMode} setMapMode={setMapMode} />
        <div className="absolute top-4 right-4 bg-white/80 backdrop-blur-sm p-2 rounded-lg shadow-lg border border-gray-200 z-20">
         <label htmlFor="year-select" className="text-sm font-bold text-gray-700 mr-2">Year:</label>
         <select
@@ -167,8 +187,9 @@ const App: React.FC = () => {
         ) : data.length > 0 ? (
           <USAMap 
             data={data} 
-            minPercentage={minMax.min} 
-            maxPercentage={minMax.max}
+            minVal={currentMinMax.min} 
+            maxVal={currentMinMax.max}
+            mapMode={mapMode}
             onStateHover={handleStateHover}
             perCapitaFilter={perCapitaFilter}
           />
@@ -184,7 +205,7 @@ const App: React.FC = () => {
             usAveragePerCapita={usAveragePerCapita}
         />
       )}
-      {!isLoading && data.length > 0 && <Legend min={minMax.min} max={minMax.max} />}
+      {!isLoading && data.length > 0 && <Legend min={currentMinMax.min} max={currentMinMax.max} mode={mapMode} />}
       {tooltip && <Tooltip data={tooltip} />}
     </div>
   );

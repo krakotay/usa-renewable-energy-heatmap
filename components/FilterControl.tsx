@@ -8,12 +8,17 @@ interface FilterControlProps {
   usAveragePerCapita: number;
 }
 
+const formatNumber = (num: number): string => {
+  return Math.round(num).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+};
+
 export const FilterControl: React.FC<FilterControlProps> = ({
   perCapitaFilter,
   setPerCapitaFilter,
   maxPerCapita,
   usAveragePerCapita,
 }) => {
+  const usAverageFormatted = formatNumber(usAveragePerCapita);
   return (
     <div className="absolute bottom-24 left-4 bg-white/80 backdrop-blur-sm p-3 rounded-lg shadow-lg border border-gray-200 text-gray-800 text-sm w-full max-w-xs md:max-w-sm z-10">
       <label htmlFor="perCapitaFilter" className="font-bold mb-2 block">
@@ -32,16 +37,16 @@ export const FilterControl: React.FC<FilterControlProps> = ({
           aria-label="Filter by per-capita total generation"
         />
         <span className="font-mono text-right w-24 bg-gray-100 px-2 py-1 rounded">
-            {perCapitaFilter.toLocaleString()}
+            {formatNumber(perCapitaFilter)}
         </span>
       </div>
       <div className="mt-2 flex justify-center">
         <button
           onClick={() => setPerCapitaFilter(Math.round(usAveragePerCapita))}
           className="text-xs text-cyan-700 hover:text-cyan-900 font-semibold py-1 px-2 rounded-md bg-cyan-100/50 hover:bg-cyan-100 transition-colors"
-          title={`Set filter to the US average per capita total generation: ${Math.round(usAveragePerCapita).toLocaleString()} kWh`}
+          title={`Set filter to the US average per capita total generation: ${usAverageFormatted} kWh`}
         >
-          US Average: {Math.round(usAveragePerCapita).toLocaleString()} kWh
+          US Average: {usAverageFormatted} kWh
         </button>
       </div>
     </div>

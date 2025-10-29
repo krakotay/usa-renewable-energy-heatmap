@@ -1,3 +1,4 @@
+
 import React from 'react';
 import type { TooltipData } from '../types';
 
@@ -6,7 +7,7 @@ interface TooltipProps {
 }
 
 const formatNumber = (num: number): string => {
-  return num.toLocaleString();
+  return Math.round(num).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
 };
 
 export const Tooltip: React.FC<TooltipProps> = ({ data }) => {
@@ -29,11 +30,11 @@ export const Tooltip: React.FC<TooltipProps> = ({ data }) => {
         </p>
         <p className="flex justify-between">
           <span className="font-semibold text-gray-600">Renewable Gen./Capita:</span>
-          <span className="font-mono text-lg text-gray-900">{formatNumber(Math.round(perCapitaRenewableKWh))} kWh</span>
+          <span className="font-mono text-lg text-gray-900">{formatNumber(perCapitaRenewableKWh)} kWh</span>
         </p>
         <p className="flex justify-between">
           <span className="font-semibold text-gray-600">Total Gen./Capita:</span>
-          <span className="font-mono text-lg text-gray-900">{formatNumber(Math.round(perCapitaKWh))} kWh</span>
+          <span className="font-mono text-lg text-gray-900">{formatNumber(perCapitaKWh)} kWh</span>
         </p>
         <p className="flex justify-between">
           <span className="font-semibold text-gray-600">Population (2024):</span>
@@ -42,20 +43,18 @@ export const Tooltip: React.FC<TooltipProps> = ({ data }) => {
         <hr className="border-gray-200 my-2" />
         <p className="flex justify-between">
           <span className="text-gray-500">Solar Generation:</span>
-          <span className="font-mono text-gray-900">{formatNumber(solar)}</span>
+          <span className="font-mono text-gray-900">{formatNumber(solar)} GWh</span>
         </p>
         <p className="flex justify-between">
           <span className="text-gray-500">Wind Generation:</span>
-          <span className="font-mono text-gray-900">{formatNumber(wind)}</span>
+          <span className="font-mono text-gray-900">{formatNumber(wind)} GWh</span>
         </p>
         <p className="flex justify-between">
           <span className="text-gray-500">Total Generation:</span>
-          <span className="font-mono text-gray-900">{formatNumber(total)}</span>
+          <span className="font-mono text-gray-900">{formatNumber(total)} GWh</span>
         </p>
       </div>
        <p className="text-xs text-gray-500 mt-3 pt-2 border-t border-gray-200">
-        Unit: thousand MWh
-        <br />
         Source: U.S. EIA
       </p>
     </div>
